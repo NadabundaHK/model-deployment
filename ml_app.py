@@ -10,7 +10,7 @@ attribute_info = """
                  - Gender: Male and Female
                  - Family_Size: 1-10
                  - Var_1: Cat_1, Cat_2, Cat_3, Cat_4, Cat_5, Cat_6, Cat_7
-                 - Age: 15-100
+                 - Age: 18-100
                  - Ever_Married: 1.Yes, 0.No
                  - Graduated: 1. Yes, 0. No
                  """
@@ -101,7 +101,7 @@ def run_ml_app():
     st.subheader('Prediction Result')
 
     # Add missing features if needed to make the total features 23
-    missing_features_count = 23 - len(encoded_result)
+    missing_features_count = 22 - len(encoded_result)
     encoded_result.extend([0] * missing_features_count)  # Add default values for missing features
 
 
